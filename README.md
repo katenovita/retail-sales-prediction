@@ -71,7 +71,10 @@ Metrics used:
 - then convert RMSE and RMSPE on original sales scale (using expm1 to reverse the log transform)
 
 5. Results
+   on Validation set
    <img width="1189" height="495" alt="image" src="https://github.com/user-attachments/assets/eb44af71-098a-4d24-a663-11e8beac1317" />
+
+With the lowest RMSPE score of 0.124, meaning that the prediction on validation set is not too far off from the actual sales, the **tuned XGBoost model** is hence used to predict sales on test set.
 
 Kaggle scores (by uploading submitted sales prediction per store based on test set):
 * Private Leaderboard: 0.12290
