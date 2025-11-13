@@ -25,7 +25,7 @@ Rossmann, a major European drugstore chain, needs accurate forecasts to manage:
 - Supply chain operations
 - Promotion budgeting
 
-The goal: Predict daily sales for each store in the test period based on historical sales and store metadata. Accurate forecasts directly reduce operational costs and improve revenue planning.
+The goal: _Predict daily sales for each store in the test period (6 weeks in advance) based on historical sales and store data_. Accurate forecasts directly reduce operational costs and improve revenue planning.
 
 ## Methodology
 1. Data Preparation
@@ -49,8 +49,8 @@ Scaling:
 - Ordinal encoding for `Store` (integer encoding from 1 to 1115)
 - One-hot encoding for `PromoInterval`
 - Passthrough for binary fields (`Promo`, `Open`, `SchoolHoliday`, `Promo2`)
-- Promotion metadata from store.csv (`Promo2SinceYear`, `Promo2SinceWeek`)
-- Competition metadata used directly without time transformations
+- Promotion data from store.csv (`Promo2SinceYear`, `Promo2SinceWeek`)
+- Competition data used directly without time transformations
 
 3. Modeling
 
