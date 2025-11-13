@@ -4,7 +4,7 @@ Based on Kaggle competition in 2015 "Florian Knauer and Will Cukierski. Rossmann
 
 ## Executive Summary
 
-This project is aimed to tackle the Kaggle “Rossmann Store Sales” challenge by building an end-to-end machine learning pipeline to forecast six weeks of daily sales for ~1150 retail stores in Germany.
+This project is aimed to tackle the Kaggle “Rossmann Store Sales” challenge by building an end-to-end machine learning pipeline to forecast six weeks of daily sales for ~1100 retail stores in Germany.
 Using a combination of feature engineering, time-based validation, and machine learning models (i.e. Linear Regression, LightGBM, XGBoost), the final solution (using tuned XGBoost model) achieved a pretty strong competitive performance on Kaggle:
 
 🏅 Private Score: 0.12290 RMSPE
