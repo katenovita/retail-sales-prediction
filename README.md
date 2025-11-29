@@ -70,8 +70,9 @@ Metrics used:
 - RMSE (log scale)
 - then convert RMSE and RMSPE on original sales scale (using expm1 to reverse the log transform)
 
-5. Results
-   on Validation set
+## Results
+
+on Validation set
    <img width="1189" height="495" alt="image" src="https://github.com/user-attachments/assets/eb44af71-098a-4d24-a663-11e8beac1317" />
 
 With the lowest RMSPE score of 0.124, meaning that the prediction on validation set is not too far off from the actual sales, the **tuned XGBoost model** is hence used to predict sales on test set.
@@ -80,13 +81,13 @@ Kaggle scores (by uploading submitted sales prediction per store based on test s
 * Private Leaderboard: 0.12290
 * Public Leaderboard: 0.12092
 
-6. Limitations
+### Limitations
 
 - The model does not use lag or rolling time-series features, limiting its ability to capture deeper store-level temporal patterns.
 - External factors such as weather or local events were not included, which may reduce predictive accuracy.
 - Only single boosted-tree models were used; no ensembling or deep time-series models were explored.
 
-7. Future Improvements
+### Future Improvements
 
 - Explore more with lagged sales, rolling averages, and long-term trend features to better capture temporal dynamics.
 - Incorporate external data sources (e.g. weather, regional holidays, events) to enrich the feature.
